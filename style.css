@@ -1,0 +1,89 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body {
+    background-color : var(--secondary-color);
+}
+:root{
+    --primary-color : white;
+    --secondary-color : rgb(21, 21, 31);
+}
+.dark-mode {
+    --primary-color : black;
+    --secondary-color : rgb(246, 246, 246);
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 0;
+    color : var(--primary-color);
+}
+.header {
+    text-align: center;
+    margin: 50px 0;
+}
+.title {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color : var(--primary-color);
+    text-align: center;}
+.search-box {
+    width: 300px;
+    height: 60px;
+    font-size: 24px;
+    color : var(--primary-color);
+    padding: 5px;
+    background : linear-gradient(to right ,rgb(246, 34, 218) , rgb(151, 5, 209));
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 0;
+    padding: 0 5px;
+}
+.currency-rank {
+    font-size : 20px;
+    font-weight : 700;
+    
+    width: 40px;
+}
+.currency-image {
+    width: 40px;
+    
+}
+.currency-details {
+    font-size: 20px;
+    width: 170px;
+    text-align: left;
+}
+
+.search-box:focus {
+    outline : none;
+}
+.positive-growth {
+    color : #35d450
+}
+.negetive-growth {
+    color : #ff3d3d
+}
+.fas {
+    display: block;
+    font-size: 20px;
+    margin-top : 30px;
+    transition: transform 0.5s;
+}
+@media only screen and (max-width : 1400px) {
+    .container {
+        max-width: 90vw;
+    }
+    .row {
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+}
